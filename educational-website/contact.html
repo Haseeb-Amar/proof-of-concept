@@ -1,0 +1,91 @@
+﻿
+<?php
+session_start();
+if (isset($_SESSION['feedback'])) {
+    echo
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+    <link rel="stylesheet" href="StyleSheet.css">
+
+</head>
+<body>
+    <div class="main-cont">
+        <header>
+            <a href="#" class="icon">Unique<span>Study</span>Platform</a>
+            <div id="menu" class="bar"></div>
+            <nav class="navigation">
+                <a href="home-page.html">home</a>
+                <a href="courses-we-offer.html">our courses</a>
+                <a href="tutors.html">tutors</a>
+                <a href="feedback.html">feedback</a>
+                <a href="fees.html">fees</a>
+                <a href="wikiapi.html">knowledge corner</a>
+                <a href="http://localhost/educational-website/contact.html">contact</a>
+                <a href="http://localhost/educational-website/index.php">login</a>
+            </nav>
+        </header>
+
+        <h1 class="heading">contact us</h1>
+
+        <section class="contact">
+            <div class="image">
+                <img src="images/contact-img.svg" alt="">
+            </div>
+            <form action="send_email.php" method="POST">
+                <div class="inputBox">
+                    <input type="text" name="name" placeholder="name" required>
+                    <input type="email" name="email" placeholder="email" required>
+                </div>
+                <input type="text" name="subject" placeholder="subject" class="box" required>
+                <textarea name="message" placeholder="message" cols="30" rows="10" required></textarea>
+                <input type="submit" class="btn" value="send">
+            </form>
+        </section>
+
+        <section class="footer">
+            <div class="box-main-cont">
+                <div class="box">
+                    <h3>about us</h3>
+                    <p>We are one of the leading online learning platforms in the country, specializing in web development. For over 7 years, we have been dedicated to providing high-quality education to students of all ages and backgrounds. Our mission is to make learning accessible, affordable, and effective for everyone. We offer a wide range of courses that are designed and delivered by industry experts to ensure that our students gain the skills and knowledge they need to succeed in today's competitive job market.</p>
+                    <p>Our platform is built on the principles of flexibility and convenience, allowing students to learn at their own pace, on their own schedule. Whether you are a beginner looking to start your journey in web development or an experienced professional seeking to upgrade your skills, we have the right course for you. Our interactive learning materials, real-world projects, and personalized feedback ensure that you not only learn but also apply your knowledge in practical scenarios.</p>
+                    <p>We are committed to fostering a supportive and engaging learning community. Join us and become a part of a vibrant community of learners who are passionate about technology and innovation. Together, we can achieve great things.</p>
+                </div>
+
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="home-page.html">home</a>
+                    <a href="courses-we-offer.html">courses-we-offer</a>
+                    <a href="tutors.html">tutors</a>
+                    <a href="fees.html">fees</a>
+                    <a href="feedback.html">feedback</a>
+                    <a href="contact.html">contact</a>
+                </div>
+
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">twitter</a>
+                    <a href="#">instagram</a>
+                    <a href="#">linkedin</a>
+                </div>
+
+                <div class="box">
+                    <h3>contact us</h3>
+                    <p> <i class="phone"></i> +971504562589 </p>
+                    <p> <i class="email"></i> uniquestudy@gmail.com </p>
+                    <p> <i class="adress"></i> Dubai,UAE  </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="JavaScript.js"></script>
+</body>
+</html>
